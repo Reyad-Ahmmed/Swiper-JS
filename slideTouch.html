@@ -1,0 +1,85 @@
+<html>
+
+<head>
+    <title>Touch Slider Image</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="./Style/swiper.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		overflow:hidden;
+        }
+
+        .swiper-container {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 0;
+            background-color: black;
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 300px;
+            height: 300px;
+            -webkit-box-reflect: below 0px 
+	    -webkit-gradient(linear, right top, right bottom, from(transparent),
+	    to(rgba(255, 255, 255, 0.2)));
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./Images/BR201-Petrol Blue.png" ></div>
+          <div class="swiper-slide" ><img src="./Images/BR201-White.png" ></div>
+          <div class="swiper-slide" ><img src="./Images/BR202-Bottle Green.png" ></div>
+          <div class="swiper-slide" ><img src="./Images/BR202-Navy.png" ></div>
+          <div class="swiper-slide" ><img src="./Images/BR203-Grey Melange.png" ></div>
+          <div class="swiper-slide" ><img src="./Images/BR203-Marron.png" ></div>
+          <div class="swiper-slide" ><img src="./Images/BR204-Black.png" ></div>
+          <div class="swiper-slide"><img src="./Images/BR204-Petrol Blue.png" ></div>
+          <div class="swiper-slide"><img src="./Images/BR205-Marron.png" ></div>
+          <div class="swiper-slide"><img src="./Images/BR206-Coffee.png" ></div>
+          <div class="swiper-slide"><img src="./Images/BR206-White.png" ></div>
+          <div class="swiper-slide"><img src="./Images/BR207-Coffee.png" ></div>
+          <div class="swiper-slide"><img src="./Images/BR207-Navy.png" ></div>
+          <div class="swiper-slide"><img src="./Images/BR208-B.Green.png" ></div>
+          <div class="swiper-slide"><img src="./Images/BR208-Black.png" ></div>
+          <div class="swiper-slide"><img src="./Images/BR209-Grey Melange.png" ></div>
+          <div class="swiper-slide"><img src="./Images/BR209-Navy.png" ></div>
+          <div class="swiper-slide"><img src="./Images/BR210-White.png" ></div>
+          
+        </div>
+      </div>
+    <script src="./Script/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 20,
+                stretch: 0,
+                depth: 300,
+                modifier: 1,
+                slideShadows: true,
+            },
+            loop: true,
+            autoplay: {
+                delay:2000,
+                disableOnInteraction:false
+            }
+        });
+    </script>
+</body>
+
+</html>
